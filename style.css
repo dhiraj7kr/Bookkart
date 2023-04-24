@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*resets*/
+
+/* global padding so we dont have to use padding all the time */
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* so all colours of website can be chandes at once*/
+:root {
+    --primary-text-color:#183b56;
+    --seconday-text-color: #577592;
+    --accent-color:#2294ed;
+    --padding-inline-section:20px
+
+}
+/*to give font to body if popping fails automatically change to sans-serif font*/
+
+body {
+    font-family: 'Poppins',sans-serif;
+    color: var(--primary-text-color);
+}
+/* to increse the size of text from the default form*/
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+/* to chane the paragraph font and color using above colour code*/
+p {
+ font-family: 'Roboto', sans-serif;
+ font-size: 1.25rem;
+ color: var(--seconday-text-color);
+ line-height: 1.8rem;
+}
+/* ankel text with no underline */
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+ul {
+    list-style: none;
+}
+/*utility claases*/
+
+/*utility class form top banner */
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    /* padding in line from above room section*/
+}
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+.hover-link {
+    color: var(--primary-text-color);
+}
+.hover-link:hover {
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+}
+
+
+
+/*top banner*/
+
+.top-banner {
+background-color:#4fb3d4;
+background-image: url('');
+background: size 300px; 
+background-repeat:nil;
+
+}
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+
+}
+/*nav */
+.main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+.company-logo img {
+    width: 200px;/*for the size of the logo*/
+}
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;/* for the gap between nav options*/
+}
+.nav-link {
+    flex-basis: 730px;
+}
+/* to change the shape of sign in & sign Up button */
+.primary-button {
+    background-color: var(--primary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--seconday-text-color);
+    transition: 0.2s ease-out;
+
+}
+.primary-button:hover{
+    background-color: var(--accent-color);
+}
+.secondary-button{
+    border: 0.5px solid var(--seconday-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+/* header section*/
+header {
+    padding: 50px var(--padding-inline-section);
+}
+.header-section {
+    justify-content: center;
+    gap: 50px;/*so left or right content kai 
+    bitch m 50px ka gap  aajaye*/
+}
+.header-left {
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: -20px;
+}
+.get-started-btn {
+    margin-top: 20px;/* gap between paragraph and get started button*/
+}
+.header-right img{
+    width: 600px;
+}
